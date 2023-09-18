@@ -18,7 +18,7 @@ export const getPlacesData = async (type, sw, ne) => {
         
             },
             headers: {
-                'X-RapidAPI-Key': '722e1b9e2amshb3f93bd4b54bdf1p1fb508jsn3553cd0b3d83',
+                'X-RapidAPI-Key': 'REACT_APP_RAPIDAPI_API_KEY',
                 'X-RapidAPI-Host': 'travel-advisor.p.rapidapi.com',
 
             }
@@ -40,7 +40,7 @@ export const getWeatherData = async (lat, lng) => {
         const {data} = await axios.get('https://open-weather13.p.rapidapi.com/city/landon', {
             params: { lon: lng, lat: lat},
             headers: {
-                'X-RapidAPI-Key': '722e1b9e2amshb3f93bd4b54bdf1p1fb508jsn3553cd0b3d83',
+                'X-RapidAPI-Key': 'REACT_APP_RAPIDAPI_API_KEY',
                 'X-RapidAPI-Host': 'open-weather13.p.rapidapi.com'
             }
         });
